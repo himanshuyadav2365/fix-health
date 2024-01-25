@@ -26,7 +26,7 @@ const DoctorsInCity = ({ allDoctors }) => {
       <h2 className="text-3xl font-bold mb-4 text-white mx-4">Doctors in {city.toUpperCase()}</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4">
-        {selectedCity && filteredDoctors.length === 0 && <p>No doctors found in {selectedCity}.</p>}
+        {selectedCity && filteredDoctors.length === 0 && <p className='text-white font-bold text-2xl'>No doctors found in {selectedCity}.</p>}
         {filteredDoctors.map((doctor, index) => (
           <div key={index} className="bg-white p-6 mb-4 rounded-md shadow-md">
             <h3 className="text-xl font-bold mb-2">{doctor.name}</h3>
